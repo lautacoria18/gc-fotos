@@ -79,8 +79,9 @@ export default function Sobremi() {
           <SectionTitle
             className="section-title "
             subheading="Sobre mí"
-            heading="Guadalupe Cassarino"
+            heading=""
           />
+          <Ptext>Guadalupe Cassarino.</Ptext>
           <Ptext>Fotógrafa Argentina nacida en Buenos Aires.</Ptext>
           <Ptext>
             Me acerque a la fotografía por hobby, siendo mí principal interés
@@ -90,7 +91,7 @@ export default function Sobremi() {
             Comencé mí formación a través de cursos y luego continué mis
             estudios en el Centro Argentino Fotográfico (Escuela CAF). Siendo mí
             título "EXPERTA EN TÉCNICAS FOTOGRÁFICAS" y con mención de honor por
-            la fotografía "SOMBRAS"
+            la fotografía "SOMBRAS".
           </Ptext>{' '}
           <Ptext>
             Actualmente me dedico a la fotografía de embarazadas, new born y
