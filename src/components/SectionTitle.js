@@ -5,7 +5,7 @@ const SectionTitleStyle = styledComponents.div`
 
 text-align:center;
 p{
-    font-family: 'RobotoMono Regular';
+    font-family: 'Lato Regular';
     font-size: 4rem;
 }
 h2{

@@ -6,8 +6,10 @@
 /* eslint-disable react/button-has-type */
 import React, { useState } from 'react';
 import { MdMenu, MdClose } from 'react-icons/md';
+import { useHistory, Link } from 'react-router-dom';
 
-import { Link } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
+
 import b from '../assets/images/bbs/benicio3.jpg';
 import e from '../assets/images/emb/n3.jpg';
 
@@ -47,33 +49,23 @@ export default function Embebes() {
   // const [images, setImage] = useState(data);
   const [portadas, setImage] = useState(covers);
 
-  const [model, setModel] = useState(false);
-  const [tempimgSrc, setTempImgSrc] = useState('');
-  const getImg = (image) => {
-    setTempImgSrc(image);
-    setModel(true);
-  };
   return (
     <>
-      <div className={model ? 'model open' : 'model'}>
-        <img src={tempimgSrc} alt="" />
-        <div className="closeNav">
-          <MdClose onClick={() => setModel(false)} />
-        </div>
-      </div>
-      <div className="galleryFP">
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-          {portadas.map((item, index) => (
-            // eslint-disable-next-line react/jsx-no-comment-textnodes
+      <Link to="/servicios" className="goBack">
+        <FaArrowLeft />
+      </Link>
 
-            <div className="contBB">
-              <Link to={checkLink(item.category)}>
-                <img src={item.image} style={{ width: '100%' }} />
-                <div className="centered">{checkDesc(item.category)}</div>
-              </Link>
-            </div>
-          ))}
-        </div>
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        {portadas.map((item) => (
+          // eslint-disable-next-line react/jsx-no-comment-textnodes
+
+          <div className="cont">
+            <Link to={checkLink(item.category)}>
+              <img className="imageS" src={item.image} style={{}} />
+              <div className="centered">{checkDesc(item.category)}</div>
+            </Link>
+          </div>
+        ))}
       </div>
     </>
   );

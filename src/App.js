@@ -7,6 +7,8 @@ import {
   useRouteMatch,
 } from 'react-router-dom';
 
+import Footer from './components/Footer';
+
 import NavMenu from './components/NavMenu';
 import MarchaMujer from './pages/8M';
 import Bebes from './pages/Bebes';
@@ -30,6 +32,7 @@ export default function App() {
     <>
       <Router>
         <NavMenu />
+
         <Switch>
           <Route path="/sobremi">
             <Sobremi />
@@ -81,6 +84,7 @@ export default function App() {
           </Route>
         </Switch>
       </Router>
+      <Footer />
     </>
   );
 }

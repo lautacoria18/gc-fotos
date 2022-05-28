@@ -8,9 +8,11 @@ import React, { useState } from 'react';
 import { MdMenu, MdClose } from 'react-icons/md';
 
 import { Link } from 'react-router-dom';
+
+import { FaArrowLeft } from 'react-icons/fa';
 import fp1 from '../assets/images/FP1/7urbano3.jpg';
-import M8M from '../assets/images/8m/8m-24.jpg';
-import MVIH from '../assets/images/vih/vih6.jpg';
+import M8M from '../assets/images/8M2/11.jpg';
+import MVIH from '../assets/images/vih/6.jpg';
 import './Servicios.css';
 
 function checkDesc(tipo) {
@@ -58,33 +60,23 @@ export default function Fotoperiodismo() {
   // const [images, setImage] = useState(data);
   const [portadas, setImage] = useState(covers);
 
-  const [model, setModel] = useState(false);
-  const [tempimgSrc, setTempImgSrc] = useState('');
-  const getImg = (image) => {
-    setTempImgSrc(image);
-    setModel(true);
-  };
   return (
     <>
-      <div className={model ? 'model open' : 'model'}>
-        <img src={tempimgSrc} alt="" />
-        <div className="closeNav">
-          <MdClose onClick={() => setModel(false)} />
-        </div>
-      </div>
-      <div className="galleryFP">
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-          {portadas.map((item, index) => (
-            // eslint-disable-next-line react/jsx-no-comment-textnodes
+      <Link to="/servicios" className="goBack">
+        <FaArrowLeft />
+      </Link>
 
-            <div className="contFP">
-              <Link to={checkLink(item.category)}>
-                <img src={item.image} style={{ width: '100%' }} />
-                <div className="centered">{checkDesc(item.category)}</div>
-              </Link>
-            </div>
-          ))}
-        </div>
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        {portadas.map((item) => (
+          // eslint-disable-next-line react/jsx-no-comment-textnodes
+
+          <div className="cont">
+            <Link to={checkLink(item.category)}>
+              <img className="imageS" src={item.image} style={{}} />
+              <div className="centered">{checkDesc(item.category)}</div>
+            </Link>
+          </div>
+        ))}
       </div>
     </>
   );

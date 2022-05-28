@@ -27,7 +27,7 @@ const NavMenuStyles = styled.div`
     }
     a {
       display: inline-block;
-      font-family: 'RobotoMono Regular';
+      font-family: 'Belgrano';
       padding: 2rem 2rem;
       font-size: 2rem;
       color: var(--gary-1);

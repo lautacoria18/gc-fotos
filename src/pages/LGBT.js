@@ -2,8 +2,11 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 
-import React, { useState } from 'react';
+import React, { useState, Suspense, lazy } from 'react';
 import { MdMenu, MdClose } from 'react-icons/md';
+import { Link } from 'react-router-dom';
+
+import { FaArrowLeft } from 'react-icons/fa';
 import fp1 from '../assets/images/FP1/7urbano3.jpg';
 import fp2 from '../assets/images/FP1/7urbano5.jpg';
 import fp3 from '../assets/images/FP1/orgullo-11.jpg';
@@ -53,6 +56,9 @@ export default function LGBT() {
   };
   return (
     <>
+      <Link to="/fotoperiodismo" className="goBack">
+        <FaArrowLeft />
+      </Link>
       <div className={model ? 'model open' : 'model'}>
         <img src={tempimgSrc} alt="" />
         <div className="closeNav">

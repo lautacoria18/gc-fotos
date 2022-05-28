@@ -4,15 +4,18 @@
 
 import React, { useState } from 'react';
 import { MdMenu, MdClose } from 'react-icons/md';
-import fp1 from '../assets/images/vih/vih.jpg';
-import fp2 from '../assets/images/vih/vih2.jpg';
-import fp3 from '../assets/images/vih/vih3.jpg';
-import fp4 from '../assets/images/vih/vih4.jpg';
-import fp5 from '../assets/images/vih/vih5.jpg';
-import fp6 from '../assets/images/vih/vih6.jpg';
-import fp7 from '../assets/images/vih/vih7.jpg';
-import fp8 from '../assets/images/vih/vih8.jpg';
-import fp9 from '../assets/images/vih/vih9.jpg';
+import { Link } from 'react-router-dom';
+
+import { FaArrowLeft } from 'react-icons/fa';
+import fp1 from '../assets/images/vih/1.jpg';
+import fp2 from '../assets/images/vih/2.jpg';
+import fp3 from '../assets/images/vih/3.jpg';
+import fp4 from '../assets/images/vih/4.jpg';
+import fp5 from '../assets/images/vih/5.jpg';
+import fp6 from '../assets/images/vih/6.jpg';
+import fp7 from '../assets/images/vih/7.jpg';
+import fp8 from '../assets/images/vih/8.jpg';
+import fp9 from '../assets/images/vih/9.jpg';
 import '../components/Gallery.css';
 
 export default function HIV() {
@@ -63,6 +66,9 @@ export default function HIV() {
   };
   return (
     <>
+      <Link to="/fotoperiodismo" className="goBack">
+        <FaArrowLeft />
+      </Link>
       <div className={model ? 'model open' : 'model'}>
         <img src={tempimgSrc} alt="" />
         <div className="closeNav">

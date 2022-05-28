@@ -1,77 +1,28 @@
-.gallery2 {
-  margin-top: 100px;
-  position: fixed;
-  background: transparent;
-  display: block;
-  border-radius: 8px;
-  transition: 0.3s ease background-color;
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 90px;
+  grid-auto-rows: minmax(100px, auto);
+  margin-left: 21%;
+  margin-right: 22%;
+  margin-top: 6%;
 }
 
-.gallery3 {
-  -webkit-column-count: 4;
-  -moz-column-count: 4;
-  column-count: 4;
-
-  padding: 0 12px;
-}
-.galleryFP {
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
-
-  padding: 0 12px;
-}
-.Texto {
-  display: inline-block;
-  font-family: "RobotoMono Regular";
-  padding: 5px;
-  font-size: 2rem;
-  color: var(--gary-1);
-  outline: none;
-  background-color: var(--dark-bg);
-}
-.Texto:hover {
-  background-color: #4caf50; /* Green */
-  color: white;
-  cursor: pointer;
-}
-
-.pics2:hover {
-  opacity: 0.5;
-  color: white;
-}
 .cont {
   position: relative;
   text-align: center;
   color: white;
+}
+.imageS {
   height: 400px;
   width: 350px;
 }
-.contFP {
-  position: relative;
-  text-align: center;
-  color: white;
-  height: 400px;
-  width: 350px;
-  margin-left: 60px;
-}
-
-.contFP:hover {
+.cont:hover {
   opacity: 0.5;
   color: white;
 }
-.contBB {
-  position: relative;
-  text-align: center;
-  color: white;
-  height: 600px;
-  width: 350px;
-  margin-left: 320px;
-}
-
-.contBB:hover {
-  opacity: 0.5;
-  color: white;
+.goBack {
+  display: none;
 }
 
 .centered {
@@ -81,4 +32,42 @@
   transform: translate(-50%, -50%);
   font-size: 30px;
   color: white;
+}
+
+@media (max-width: 991px) {
+  .row {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    margin-left: 14%;
+  }
+  .imageS {
+    height: 350px;
+    width: 290px;
+  }
+  .goBack {
+    position: fixed;
+    margin-top: 10px;
+    margin-left: 1px;
+    height: 50px;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .row {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    margin-left: 14%;
+  }
+  .imageS {
+    height: 350px;
+    width: 290px;
+  }
+  .goBack {
+    position: fixed;
+    margin-top: 10px;
+    margin-left: 1px;
+    height: 50px;
+    display: block;
+  }
 }

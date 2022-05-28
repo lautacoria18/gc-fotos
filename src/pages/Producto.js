@@ -4,6 +4,9 @@
 
 import React, { useState } from 'react';
 import { MdMenu, MdClose } from 'react-icons/md';
+import { Link } from 'react-router-dom';
+
+import { FaArrowLeft } from 'react-icons/fa';
 import fp1 from '../assets/images/producto/1.jpg';
 import fp2 from '../assets/images/producto/2.png';
 import fp3 from '../assets/images/producto/3.jpg';
@@ -93,6 +96,9 @@ export default function Producto() {
   };
   return (
     <>
+      <Link to="/servicios" className="goBack">
+        <FaArrowLeft />
+      </Link>
       <div className={model ? 'model open' : 'model'}>
         <img src={tempimgSrc} alt="" />
         <div className="closeNav">

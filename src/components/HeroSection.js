@@ -26,7 +26,7 @@ const HeroStyles = styledComponents.div`
       width: 100%;
     }
     .hero__name {
-      font-family: 'Montserrat SemiBold';
+      font-family: 'Belgrano';
       font-size: 7rem;
       color: var(--white);
     }

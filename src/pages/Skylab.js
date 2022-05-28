@@ -4,19 +4,22 @@
 
 import React, { useState } from 'react';
 import { MdMenu, MdClose } from 'react-icons/md';
-import fp1 from '../assets/images/sky/skylab-9.jpg';
-import fp2 from '../assets/images/sky/skylab-36.jpg';
-import fp3 from '../assets/images/sky/skylab-56.jpg';
-import fp4 from '../assets/images/sky/skylab-60.jpg';
-import fp5 from '../assets/images/sky/skylab-76.jpg';
-import fp6 from '../assets/images/sky/skylab-81.jpg';
-import fp7 from '../assets/images/sky/skylab-82.jpg';
-import fp8 from '../assets/images/sky/skylab-84.jpg';
-import fp9 from '../assets/images/sky/skylab-88.jpg';
-import fp10 from '../assets/images/sky/skylab-105.jpg';
-import fp11 from '../assets/images/sky/skylab-108.jpg';
-import fp12 from '../assets/images/sky/skylab-115.jpg';
-import fp13 from '../assets/images/sky/skylab-139.jpg';
+import { Link } from 'react-router-dom';
+
+import { FaArrowLeft } from 'react-icons/fa';
+import fp1 from '../assets/images/sky/1.jpg';
+import fp2 from '../assets/images/sky/2.jpg';
+import fp3 from '../assets/images/sky/3.jpg';
+import fp4 from '../assets/images/sky/4.jpg';
+import fp5 from '../assets/images/sky/5.jpg';
+import fp6 from '../assets/images/sky/6.jpg';
+import fp7 from '../assets/images/sky/7.jpg';
+import fp8 from '../assets/images/sky/8.jpg';
+import fp9 from '../assets/images/sky/9.jpg';
+import fp10 from '../assets/images/sky/10.jpg';
+import fp11 from '../assets/images/sky/11.jpg';
+import fp12 from '../assets/images/sky/12.jpg';
+import fp13 from '../assets/images/sky/13.jpg';
 
 import '../components/Gallery.css';
 
@@ -84,6 +87,9 @@ export default function Skylab() {
   };
   return (
     <>
+      <Link to="/eventos" className="goBack">
+        <FaArrowLeft />
+      </Link>
       <div className={model ? 'model open' : 'model'}>
         <img src={tempimgSrc} alt="" />
         <div className="closeNav">

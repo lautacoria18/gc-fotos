@@ -1,9 +1,12 @@
+/* eslint-disable react/button-has-type */
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 
 import React, { useState } from 'react';
 import { MdMenu, MdClose } from 'react-icons/md';
+import { useHistory, Link } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
 import fp1 from '../assets/images/emb/5maternidad3.jpg';
 import fp2 from '../assets/images/emb/agos1.jpg';
 import fp3 from '../assets/images/emb/agos2.jpg';
@@ -26,10 +29,6 @@ import '../components/Gallery.css';
 
 export default function Embarazadas() {
   const data = [
-    {
-      id: 1,
-      imgSrc: fp1,
-    },
     {
       id: 2,
       imgSrc: fp2,
@@ -104,6 +103,10 @@ export default function Embarazadas() {
   };
   return (
     <>
+      <Link to="/embebes" className="goBack">
+        <FaArrowLeft />
+      </Link>
+
       <div className={model ? 'model open' : 'model'}>
         <img src={tempimgSrc} alt="" />
         <div className="closeNav">
