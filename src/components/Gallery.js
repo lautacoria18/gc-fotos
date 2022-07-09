@@ -124,7 +124,10 @@ export default function Gallery() {
         {data.map((item, index) => (
           // eslint-disable-next-line react/jsx-no-comment-textnodes
           <div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
-            <img src={item.imgSrc} style={{ width: '100%' }} />
+            <div className="img-hover">
+              <img src={item.imgSrc} style={{ width: '100%' }} />
+              <h2 className="texto-hover">Guada pasame la puta foto</h2>
+            </div>
           </div>
         ))}
       </div>

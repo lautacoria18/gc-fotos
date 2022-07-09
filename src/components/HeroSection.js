@@ -19,7 +19,7 @@ const HeroStyles = styledComponents.div`
   }
   .hero__heading {
     font-size: 2rem;
-    margin-bottom: -4rem;
+
     position: relative;
     span {
       display: inline-block;
@@ -41,6 +41,7 @@ const HeroStyles = styledComponents.div`
   .hero__info {
     margin-top: -18rem;
   }
+  
   @media only screen and (max-width: 768px) {
     .hero {
       min-height: 750px;
@@ -78,8 +79,8 @@ export default function HeroSection() {
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
             </Ptext>
             <Button
-              btnLink="/portfolio"
-              btnText="Vea mi trabajo!"
+              btnLink="/servicios"
+              btnText="Mis servicios"
               outline={false}
             />
           </div>

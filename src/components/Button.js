@@ -18,8 +18,10 @@ margin-top: 2rem;
     color: ${(props) => (props.outline ? 'var(--gray-1)' : 'black')};
 
     }
-
+.button:hover{
+  background-color: gray;
 }
+
 @media only screen and (max-width: 768px) {
 
     .button {
