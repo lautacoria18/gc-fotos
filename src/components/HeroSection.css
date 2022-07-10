@@ -30,3 +30,56 @@
   text-align: left;
   font-size: medium;
 }
+
+@media (max-width: 480px) {
+  .hero {
+    margin-top: -100px;
+  }
+  .experiencias {
+    margin-bottom: -200px;
+  }
+  .block-experiencias {
+    display: block;
+    margin-bottom: -300px;
+  }
+  .container-exp {
+    margin-left: auto;
+    margin-top: 20px;
+    width: 9.5cm;
+    height: 190px;
+  }
+  .text-exp {
+    margin-left: auto;
+    margin-top: 5px;
+    font-size: 1.5em;
+    text-align: justify;
+  }
+  .name-exp {
+    margin-top: 20px;
+    margin-left: auto;
+    text-align: left;
+    font-size: medium;
+  }
+  .seeMore {
+    margin-top: 300px;
+  }
+}
+
+@media (max-width: 991px) {
+  /*este es para tablet */
+  .block-experiencias {
+    display: block;
+  }
+  .container-exp {
+    margin-left: 0px;
+    margin-top: 20px;
+    width: 18cm;
+    height: 190px;
+  }
+  .name-exp {
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: left;
+    font-size: medium;
+  }
+}

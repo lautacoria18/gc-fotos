@@ -10,7 +10,7 @@ const HeroStyles = styledComponents.div`
 
 .hero {
     height: 100vh;
-    min-height: 1200px;
+    min-height: 1300px;
     width: 100%;
     text-align: center;
     display: flex;
@@ -45,11 +45,12 @@ const HeroStyles = styledComponents.div`
   
   @media only screen and (max-width: 768px) {
     .hero {
-      min-height: 750px;
+      min-height: 1000px;
     }
     .hero__heading {
+      margin-top: -200px;
       font-size: 1.4rem;
-      margin-bottom: -3rem;
+      margin-bottom: -2rem;
       .hero__name {
         font-size: 4.5rem;
       }
@@ -59,6 +60,13 @@ const HeroStyles = styledComponents.div`
     }
     .hero__info {
       margin-top: 3rem;
+    }
+    
+  }
+  @media (max-width: 991px) {
+    /*este es para tablet */
+    .hero {
+      min-height: 1650px;
     }
   }
 `;
@@ -114,6 +122,13 @@ export default function HeroSection() {
                   </p>
                   <h3 className="name-exp">Lautaro Coria</h3>
                 </div>
+              </div>
+              <div className="seeMore">
+                <Button
+                  btnLink="/servicios"
+                  btnText="Ver más"
+                  outline={false}
+                />
               </div>
             </div>
           </div>
