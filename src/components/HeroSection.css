@@ -1,0 +1,32 @@
+.experiencias {
+  margin-top: 60px;
+}
+
+.block-experiencias {
+  display: flex;
+  text-align: center;
+}
+
+.title-exp {
+  font-size: 5rem;
+}
+.container-exp {
+  margin-left: 30px;
+  margin-top: 20px;
+  width: 15cm;
+  height: 250px;
+}
+
+.text-exp {
+  margin-left: 10px;
+  margin-top: 5px;
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+.name-exp {
+  margin-top: 95px;
+  margin-left: 10px;
+  text-align: left;
+  font-size: medium;
+}

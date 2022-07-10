@@ -4,12 +4,13 @@ import HeroImg from '../assets/images/hero.png';
 import Button from './Button';
 import Ptext from './Ptext';
 import NeneJpg from '../assets/images/elnene.jpeg';
+import './HeroSection.css';
 
 const HeroStyles = styledComponents.div`
 
 .hero {
     height: 100vh;
-    min-height: 1000px;
+    min-height: 1200px;
     width: 100%;
     text-align: center;
     display: flex;
@@ -83,6 +84,38 @@ export default function HeroSection() {
               btnText="Mis servicios"
               outline={false}
             />
+            <div className="experiencias">
+              <h1 className="title-exp">Experiencias</h1>
+              <div className="block-experiencias">
+                <div className="container-exp">
+                  <p className="text-exp">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat
+                  </p>
+                  <h3 className="name-exp">Lautaro Coria</h3>
+                </div>
+                <div className="container-exp">
+                  <p className="text-exp">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat
+                  </p>
+                  <h3 className="name-exp">Lautaro Coria</h3>
+                </div>
+                <div className="container-exp">
+                  <p className="text-exp">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat
+                  </p>
+                  <h3 className="name-exp">Lautaro Coria</h3>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
