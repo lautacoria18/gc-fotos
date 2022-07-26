@@ -3,10 +3,14 @@ import styledComponents from 'styled-components';
 import Button from '../components/Button';
 import Ptext from '../components/Ptext';
 import SectionTitle from '../components/SectionTitle';
-import AboutImg from '../assets/images/about-sec-img.png';
+import AboutImg from '../assets/images/guada.jpg';
 
 const AboutSectionStyle = styledComponents.div`
 padding: 9rem 0;
+.guada-foto{
+  width: 500px;
+  height: 800px
+}
 .container{
   display: flex;
   align-items: center;
@@ -54,6 +58,7 @@ padding: 9rem 0;
     margin: 0 auto;
     margin-top: 2rem;
   }
+ 
   .aboutSection__buttons {
     flex-direction: column;
     gap: 0rem;
@@ -73,7 +78,7 @@ export default function Sobremi() {
     <AboutSectionStyle>
       <div className="container">
         <div className="aboutSection__left">
-          <img src={AboutImg} alt="" />
+          <img className="guada-foto" src={AboutImg} alt="" />
         </div>
         <div className="aboutSection__right">
           <SectionTitle
