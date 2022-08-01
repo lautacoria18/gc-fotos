@@ -28,7 +28,7 @@ function checkDesc(tipo) {
 }
 function checkLink(tipo) {
   if (tipo === 'FP') {
-    return '/fotoperiodismo';
+    return '/servicios/fotoperiodismo';
   }
   if (tipo === 'PR') {
     return '/productos';
@@ -76,8 +76,10 @@ export default function Servicios() {
 
           <div className="cont">
             <Link to={checkLink(item.category)}>
-              <img className="imageS" src={item.image} style={{}} />
-              <div className="centered">{checkDesc(item.category)}</div>
+              <div className="img-serv">
+                <img className="imageS" src={item.image} style={{}} />
+                <h2 className="centered">{checkDesc(item.category)}</h2>
+              </div>
             </Link>
           </div>
         ))}

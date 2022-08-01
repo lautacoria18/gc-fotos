@@ -61,8 +61,10 @@ export default function Embebes() {
 
           <div className="cont">
             <Link to={checkLink(item.category)}>
-              <img className="imageS" src={item.image} style={{}} />
-              <div className="centered">{checkDesc(item.category)}</div>
+              <div className="img-serv">
+                <img className="imageS" src={item.image} style={{}} />
+                <div className="centered">{checkDesc(item.category)}</div>
+              </div>
             </Link>
           </div>
         ))}

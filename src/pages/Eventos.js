@@ -34,7 +34,7 @@ const covers = [
   {
     id: 1,
     image: c,
-    category: 'CASAMIENTO',
+    category: 'NATI Y AGUS',
   },
   {
     id: 2,
@@ -59,8 +59,12 @@ export default function Eventos() {
 
           <div className="cont">
             <Link to={checkLink(item.category)}>
-              <img className="imageS" src={item.image} style={{}} />
-              <div className="centered">{checkDesc(item.category)}</div>
+              <div className="img-serv">
+                <img className="imageS" src={item.image} style={{}} />
+                <h2 className="centered">
+                  {item.category /* checkDesc(item.category) */}
+                </h2>
+              </div>
             </Link>
           </div>
         ))}

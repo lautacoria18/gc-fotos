@@ -9,7 +9,7 @@ const AboutSectionStyle = styledComponents.div`
 padding: 9rem 0;
 .guada-foto{
   width: 500px;
-  height: 800px
+  height: 800px;
 }
 .container{
   display: flex;

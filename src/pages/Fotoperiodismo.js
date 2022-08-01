@@ -28,13 +28,13 @@ function checkDesc(tipo) {
 }
 function checkLink(tipo) {
   if (tipo === 'VIH') {
-    return '/vih';
+    return '/servicios/fotoperiodismo/hiv';
   }
   if (tipo === 'LGBT') {
-    return '/lgbt';
+    return '/servicios/fotoperiodismo/lgbt';
   }
   if (tipo === '8M') {
-    return '/8m';
+    return '/servicios/fotoperiodismo/8m';
   }
 }
 
@@ -72,8 +72,10 @@ export default function Fotoperiodismo() {
 
           <div className="cont">
             <Link to={checkLink(item.category)}>
-              <img className="imageS" src={item.image} style={{}} />
-              <div className="centered">{checkDesc(item.category)}</div>
+              <div className="img-serv">
+                <img className="imageS" src={item.image} style={{}} />
+                <div className="centered">{checkDesc(item.category)}</div>
+              </div>
             </Link>
           </div>
         ))}

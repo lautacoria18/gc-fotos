@@ -1,6 +1,7 @@
 import { HourglassEmpty } from '@material-ui/icons';
 import React from 'react';
 import {
+  BrowserRouter,
   BrowserRouter as Router,
   Route,
   Switch,
@@ -30,7 +31,7 @@ import Sobremi from './pages/Sobremi';
 export default function App() {
   return (
     <>
-      <Router>
+      <BrowserRouter>
         <NavMenu />
 
         <Switch>
@@ -40,24 +41,20 @@ export default function App() {
           <Route path="/portfolio">
             <Portfolio />
           </Route>
-          <Route path="/servicios">
-            <Servicios />
-          </Route>
+
           <Route path="/contacto">
             <Contacto />
           </Route>
-          <Route path="/fotoperiodismo">
-            <Fotoperiodismo />
-          </Route>
-          <Route path="/lgbt">
-            <LGBT />
-          </Route>
-          <Route path="/vih">
-            <HIV />
-          </Route>
-          <Route path="/8m">
-            <MarchaMujer />
-          </Route>
+          <Route exact path="/servicios" component={Servicios} />
+          <Route
+            exact
+            path="/servicios/fotoperiodismo"
+            component={Fotoperiodismo}
+          />
+          <Route path="/servicios/fotoperiodismo/lgbt" component={LGBT} />
+          <Route path="/servicios/fotoperiodismo/hiv" component={HIV} />
+          <Route path="/servicios/fotoperiodismo/8m" component={MarchaMujer} />
+
           <Route path="/productos">
             <Producto />
           </Route>
@@ -79,11 +76,11 @@ export default function App() {
           <Route path="/skylab">
             <Skylab />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <Inicio />
           </Route>
         </Switch>
-      </Router>
+      </BrowserRouter>
       <Footer />
     </>
   );
