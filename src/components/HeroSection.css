@@ -30,6 +30,10 @@
   text-align: left;
   font-size: medium;
 }
+.verMas {
+  text-align: right;
+  margin-top: -15px;
+}
 
 @media (max-width: 480px) {
   .hero {

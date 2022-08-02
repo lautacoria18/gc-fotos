@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styledComponents from 'styled-components';
 import HeroImg from '../assets/images/hero.png';
 import Button from './Button';
@@ -97,12 +98,18 @@ export default function HeroSection() {
               <div className="block-experiencias">
                 <div className="container-exp">
                   <p className="text-exp">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat
+                    Quisimos relanzar la línea de botines con una sesión de
+                    fotos y el trabajo final superó nuestra expectativa.
+                    Seguiremos trabajando con Uds para futuros lanzamientos!
                   </p>
-                  <h3 className="name-exp">Lautaro Coria</h3>
+                  <div>
+                    <h3 className="name-exp">Tigan Calzado</h3>
+                    <h3 className="verMas">
+                      <a href="/productos" target="blank">
+                        Ver fotos
+                      </a>
+                    </h3>
+                  </div>
                 </div>
                 <div className="container-exp">
                   <p className="text-exp">

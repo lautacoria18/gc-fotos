@@ -54,19 +54,10 @@ export default function App() {
           <Route path="/servicios/fotoperiodismo/lgbt" component={LGBT} />
           <Route path="/servicios/fotoperiodismo/hiv" component={HIV} />
           <Route path="/servicios/fotoperiodismo/8m" component={MarchaMujer} />
-
-          <Route path="/productos">
-            <Producto />
-          </Route>
-          <Route path="/embebes">
-            <Embebes />
-          </Route>
-          <Route path="/bebes">
-            <Bebes />
-          </Route>
-          <Route path="/embarazadas">
-            <Embarazadas />
-          </Route>
+          <Route path="/productos" component={Producto} />
+          <Route exact path="/embebes" component={Embebes} />
+          <Route path="/embebes/bebes" component={Bebes} />
+          <Route path="/embebes/embarazadas" component={Embarazadas} />
           <Route path="/eventos">
             <Eventos />
           </Route>

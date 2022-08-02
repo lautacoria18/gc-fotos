@@ -30,79 +30,98 @@ export default function Gallery() {
     {
       id: 1,
       imgSrc: Img1,
+      desc: 'Hermanas',
     },
     {
       id: 2,
       imgSrc: Img5,
+      desc: 'Frío',
     },
     {
       id: 3,
       imgSrc: Img9,
+      desc: 'Primavera',
     },
     {
       id: 4,
       imgSrc: Img13,
+      desc: 'Body',
     },
     {
       id: 5,
       imgSrc: Img17,
+      desc: 'Vértigo',
     },
     {
       id: 6,
       imgSrc: Img2,
+      desc: 'Descanso',
     },
     {
       id: 7,
       imgSrc: Img6,
+      desc: 'Reflejos',
     },
     {
       id: 8,
       imgSrc: Img10,
+      desc: 'Grandes Cascadas',
     },
     {
       id: 9,
       imgSrc: Img14,
+      desc: 'Elena',
     },
     {
       id: 10,
       imgSrc: Img18,
+      desc: 'Sombras',
     },
     {
       id: 11,
       imgSrc: Img3,
+      desc: 'Atención',
     },
     {
       id: 12,
       imgSrc: Img7,
+      desc: 'Tres',
     },
     {
       id: 13,
       imgSrc: Img11,
+      desc: 'Frío',
     },
     {
       id: 14,
       imgSrc: Img15,
+      desc: 'Rodrigo',
     },
     {
       id: 15,
       imgSrc: Img19,
+      desc: 'Bike',
     },
 
     {
       id: 16,
       imgSrc: Img4,
+      desc: 'Brisa',
     },
     {
       id: 17,
       imgSrc: Img8,
+      desc: 'Invierno',
     },
     {
       id: 18,
       imgSrc: Img12,
+      desc: 'Florencia',
     },
     {
       id: 19,
       imgSrc: Img16,
+      desc: 'Luz',
     },
   ];
 
@@ -126,7 +145,7 @@ export default function Gallery() {
           <div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
             <div className="img-hover">
               <img src={item.imgSrc} style={{ width: '100%' }} />
-              <h2 className="texto-hover">Guada pasame la puta foto</h2>
+              <h2 className="texto-hover">{item.desc}</h2>
             </div>
           </div>
         ))}
