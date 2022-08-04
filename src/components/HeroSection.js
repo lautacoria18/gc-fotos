@@ -132,7 +132,7 @@ export default function HeroSection() {
               </div>
               <div className="seeMore">
                 <Button
-                  btnLink="/servicios"
+                  btnLink="/experiencias"
                   btnText="Ver más"
                   outline={false}
                 />

@@ -171,6 +171,17 @@ export default function NavMenu() {
               Contacto
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to="experiencias"
+              onClick={() => SetShowNav(!showNav)}
+              role="button"
+              onKeyDown={() => SetShowNav(!showNav)}
+              tabIndex={0}
+            >
+              Experiencias
+            </NavLink>
+          </li>
         </ul>
       </NavMenuStyles>
     </div>

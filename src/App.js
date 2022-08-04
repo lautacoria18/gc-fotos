@@ -18,12 +18,15 @@ import Contacto from './pages/Contacto';
 import Embarazadas from './pages/Embarazadas';
 import Embebes from './pages/Embebes';
 import Eventos from './pages/Eventos';
+import Experiencias from './pages/Experiencias';
 import Fotoperiodismo from './pages/Fotoperiodismo';
 import HIV from './pages/HIV';
 import Inicio from './pages/Inicio';
 import LGBT from './pages/LGBT';
 import Portfolio from './pages/Portfolio';
 import Producto from './pages/Producto';
+import Personalizados from './pages/Productos/Personalizados';
+import Tigan from './pages/Productos/Tigan';
 import Servicios from './pages/Servicios';
 import Skylab from './pages/Skylab';
 import Sobremi from './pages/Sobremi';
@@ -35,17 +38,11 @@ export default function App() {
         <NavMenu />
 
         <Switch>
-          <Route path="/sobremi">
-            <Sobremi />
-          </Route>
-          <Route path="/portfolio">
-            <Portfolio />
-          </Route>
-
-          <Route path="/contacto">
-            <Contacto />
-          </Route>
+          <Route path="/sobremi" component={Sobremi} />
+          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/contacto" component={Contacto} />
           <Route exact path="/servicios" component={Servicios} />
+          <Route exact path="/experiencias" component={Experiencias} />
           <Route
             exact
             path="/servicios/fotoperiodismo"
@@ -54,22 +51,23 @@ export default function App() {
           <Route path="/servicios/fotoperiodismo/lgbt" component={LGBT} />
           <Route path="/servicios/fotoperiodismo/hiv" component={HIV} />
           <Route path="/servicios/fotoperiodismo/8m" component={MarchaMujer} />
-          <Route path="/productos" component={Producto} />
+          <Route exact path="/productos" component={Producto} />
+          <Route path="/productos/tigan" component={Tigan} />
+          <Route path="/productos/personalizados" component={Personalizados} />
           <Route exact path="/embebes" component={Embebes} />
-          <Route path="/embebes/bebes" component={Bebes} />
-          <Route path="/embebes/embarazadas" component={Embarazadas} />
-          <Route path="/eventos">
-            <Eventos />
-          </Route>
-          <Route path="/civil">
-            <Civil />
-          </Route>
-          <Route path="/skylab">
-            <Skylab />
-          </Route>
-          <Route exact path="/">
-            <Inicio />
-          </Route>
+          <Route exact path="/embebes/bebes" component={Bebes} />
+          <Route path="/embebes/bebes/bauti" component={Bebes} />
+          <Route path="/embebes/bebes/benicio" component={Bebes} />
+          <Route path="/embebes/bebes/????" component={Bebes} />
+          <Route exact path="/embebes/embarazadas" component={Embarazadas} />
+          <Route path="/embebes/embarazadas/debora" component={Embarazadas} />
+          <Route path="/embebes/embarazadas/analia" component={Embarazadas} />
+          <Route path="/embebes/embarazadas/agostina" component={Embarazadas} />
+          <Route path="/embebes/embarazadas/sol" component={Embarazadas} />
+          <Route path="/eventos" component={Eventos} />
+          <Route path="/civil" component={Civil} />
+          <Route path="/skylab" component={Skylab} />
+          <Route exact path="/" component={Inicio} />
         </Switch>
       </BrowserRouter>
       <Footer />

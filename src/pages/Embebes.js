@@ -25,10 +25,10 @@ function checkDesc(tipo) {
 }
 function checkLink(tipo) {
   if (tipo === 'BEBE') {
-    return '/bebes';
+    return '/embebes/bebes';
   }
   if (tipo === 'EMBARAZADA') {
-    return '/embarazadas';
+    return '/embebes/embarazadas';
   }
 }
 
