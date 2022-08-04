@@ -13,9 +13,16 @@ import Footer from './components/Footer';
 import NavMenu from './components/NavMenu';
 import MarchaMujer from './pages/8M';
 import Bebes from './pages/Bebes';
+import Bauti from './pages/Bebes/Bauti';
+import Benicio from './pages/Bebes/Benicio';
+import Francisco from './pages/Bebes/Francisco';
 import Civil from './pages/Civil';
 import Contacto from './pages/Contacto';
 import Embarazadas from './pages/Embarazadas';
+import Agostina from './pages/Embarazadas/Agostina';
+import Analia from './pages/Embarazadas/Analia';
+import Debora from './pages/Embarazadas/Debora';
+import Sol from './pages/Embarazadas/Sol';
 import Embebes from './pages/Embebes';
 import Eventos from './pages/Eventos';
 import Experiencias from './pages/Experiencias';
@@ -56,14 +63,14 @@ export default function App() {
           <Route path="/productos/personalizados" component={Personalizados} />
           <Route exact path="/embebes" component={Embebes} />
           <Route exact path="/embebes/bebes" component={Bebes} />
-          <Route path="/embebes/bebes/bauti" component={Bebes} />
-          <Route path="/embebes/bebes/benicio" component={Bebes} />
-          <Route path="/embebes/bebes/????" component={Bebes} />
+          <Route path="/embebes/bebes/bauti" component={Bauti} />
+          <Route path="/embebes/bebes/benicio" component={Benicio} />
+          <Route path="/embebes/bebes/francisco" component={Francisco} />
           <Route exact path="/embebes/embarazadas" component={Embarazadas} />
-          <Route path="/embebes/embarazadas/debora" component={Embarazadas} />
-          <Route path="/embebes/embarazadas/analia" component={Embarazadas} />
-          <Route path="/embebes/embarazadas/agostina" component={Embarazadas} />
-          <Route path="/embebes/embarazadas/sol" component={Embarazadas} />
+          <Route path="/embebes/embarazadas/debora" component={Debora} />
+          <Route path="/embebes/embarazadas/analia" component={Analia} />
+          <Route path="/embebes/embarazadas/agostina" component={Agostina} />
+          <Route path="/embebes/embarazadas/sol" component={Sol} />
           <Route path="/eventos" component={Eventos} />
           <Route path="/civil" component={Civil} />
           <Route path="/skylab" component={Skylab} />

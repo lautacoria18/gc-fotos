@@ -38,7 +38,7 @@ export default function Personalizados() {
   };
   return (
     <>
-      <Link to="/servicios" className="goBack">
+      <Link to="/productos" className="goBack">
         <FaArrowLeft />
       </Link>
       <div className={model ? 'model open' : 'model'}>
