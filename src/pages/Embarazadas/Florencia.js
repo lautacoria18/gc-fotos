@@ -10,7 +10,7 @@ import emb1 from '../../assets/images/emb/n1.jpeg';
 import emb2 from '../../assets/images/emb/n2.jpeg';
 import emb3 from '../../assets/images/emb/n3.jpg';
 
-export default function Analia() {
+export default function Florencia() {
   const data = [
     {
       id: 1,

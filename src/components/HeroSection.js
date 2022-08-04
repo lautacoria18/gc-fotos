@@ -105,7 +105,7 @@ export default function HeroSection() {
                   <div>
                     <h3 className="name-exp">Tigan Calzado</h3>
                     <h3 className="verMas">
-                      <a href="/productos" target="blank">
+                      <a href="/productos/tigan" target="blank">
                         Ver fotos
                       </a>
                     </h3>

@@ -20,7 +20,6 @@ import Civil from './pages/Civil';
 import Contacto from './pages/Contacto';
 import Embarazadas from './pages/Embarazadas';
 import Agostina from './pages/Embarazadas/Agostina';
-import Analia from './pages/Embarazadas/Analia';
 import Debora from './pages/Embarazadas/Debora';
 import Sol from './pages/Embarazadas/Sol';
 import Embebes from './pages/Embebes';
@@ -37,6 +36,7 @@ import Tigan from './pages/Productos/Tigan';
 import Servicios from './pages/Servicios';
 import Skylab from './pages/Skylab';
 import Sobremi from './pages/Sobremi';
+import Florencia from './pages/Embarazadas/Florencia';
 
 export default function App() {
   return (
@@ -68,7 +68,7 @@ export default function App() {
           <Route path="/embebes/bebes/francisco" component={Francisco} />
           <Route exact path="/embebes/embarazadas" component={Embarazadas} />
           <Route path="/embebes/embarazadas/debora" component={Debora} />
-          <Route path="/embebes/embarazadas/analia" component={Analia} />
+          <Route path="/embebes/embarazadas/florencia" component={Florencia} />
           <Route path="/embebes/embarazadas/agostina" component={Agostina} />
           <Route path="/embebes/embarazadas/sol" component={Sol} />
           <Route path="/eventos" component={Eventos} />

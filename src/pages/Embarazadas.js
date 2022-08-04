@@ -33,8 +33,8 @@ const covers = [
   {
     id: 3,
     image: ana,
-    category: 'Analía',
-    link: '/embebes/embarazadas/analia',
+    category: 'Florencia',
+    link: '/embebes/embarazadas/florencia',
   },
   {
     id: 4,
