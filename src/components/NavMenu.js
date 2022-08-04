@@ -151,7 +151,7 @@ export default function NavMenu() {
           </li>
           <li>
             <NavLink
-              to="servicios"
+              to="/servicios"
               onClick={() => SetShowNav(!showNav)}
               role="button"
               onKeyDown={() => SetShowNav(!showNav)}
@@ -162,7 +162,7 @@ export default function NavMenu() {
           </li>
           <li>
             <NavLink
-              to="contacto"
+              to="/contacto"
               onClick={() => SetShowNav(!showNav)}
               role="button"
               onKeyDown={() => SetShowNav(!showNav)}
@@ -173,7 +173,7 @@ export default function NavMenu() {
           </li>
           <li>
             <NavLink
-              to="experiencias"
+              to="/experiencias"
               onClick={() => SetShowNav(!showNav)}
               role="button"
               onKeyDown={() => SetShowNav(!showNav)}
