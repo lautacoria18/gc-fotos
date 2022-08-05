@@ -113,12 +113,12 @@ export default function HeroSection() {
                 </div>
                 <div className="container-exp">
                   <p className="text-exp">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat
+                    GUADA... Muy profesional en lo que hace, muy atenta y
+                    cuidadosa con los detalles. Además de ser muy amable ah la
+                    hora de trabajar, le pone mucho amor y dedicación a cada
+                    fotografía ❤️. SE LAS RECOMIENDO 🫶🏻!!
                   </p>
-                  <h3 className="name-exp">Lautaro Coria</h3>
+                  <h3 className="name-exp">Florencia</h3>
                 </div>
                 <div className="container-exp">
                   <p className="text-exp">

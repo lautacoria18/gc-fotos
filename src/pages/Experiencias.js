@@ -13,9 +13,9 @@ export default function Experiencias() {
     {
       id: 1,
       texto:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat',
-      cliente: 'Hermanas',
-      link: '/productos',
+        'GUADA... Muy profesional en lo que hace, muy atenta y cuidadosa con los detalles. Además de ser muy amable ah la hora de trabajar, le pone mucho amor y dedicación a cada fotografía ❤️. SE LAS RECOMIENDO 🫶🏻!!',
+      cliente: 'Florencia',
+      link: '',
     },
     {
       id: 1,

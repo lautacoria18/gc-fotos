@@ -216,7 +216,7 @@ export default function MarchaMujer() {
   };
   return (
     <>
-      <Link to="/fotoperiodismo" className="goBack">
+      <Link to="/servicios/fotoperiodismo" className="goBack">
         <FaArrowLeft />
       </Link>
       <div className={model ? 'model open' : 'model'}>

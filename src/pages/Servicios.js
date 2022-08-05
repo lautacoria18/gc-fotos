@@ -12,55 +12,30 @@ import ev2 from '../assets/images/eventos1/2.jpg';
 import fp7 from '../assets/images/FP1/orgullo.jpg';
 import './Servicios.css';
 
-function checkDesc(tipo) {
-  if (tipo === 'FP') {
-    return 'FOTOPERIODISMO';
-  }
-  if (tipo === 'EMB') {
-    return 'EMBARAZADAS/BEBES';
-  }
-  if (tipo === 'PR') {
-    return 'PRODUCTOS';
-  }
-  if (tipo === 'EV') {
-    return 'EVENTOS';
-  }
-}
-function checkLink(tipo) {
-  if (tipo === 'FP') {
-    return '/servicios/fotoperiodismo';
-  }
-  if (tipo === 'PR') {
-    return '/productos';
-  }
-  if (tipo === 'EMB') {
-    return '/embebes';
-  }
-  if (tipo === 'EV') {
-    return '/eventos';
-  }
-}
-
 const covers = [
   {
     id: 1,
     image: fp7,
-    category: 'FP',
+    category: 'FOTOPERIODISMO',
+    link: '/servicios/fotoperiodismo',
   },
   {
     id: 2,
     image: b1,
-    category: 'EMB',
+    category: 'MATERNIDAD',
+    link: '/servicios/maternidad',
   },
   {
     id: 3,
     image: p3,
-    category: 'PR',
+    category: 'PRODUCTOS',
+    link: '/servicios/productos',
   },
   {
     id: 4,
     image: ev2,
-    category: 'EV',
+    category: 'EVENTOS',
+    link: '/servicios/eventos',
   },
 ];
 
@@ -75,10 +50,10 @@ export default function Servicios() {
           // eslint-disable-next-line react/jsx-no-comment-textnodes
 
           <div className="cont">
-            <Link to={checkLink(item.category)}>
+            <Link to={item.link}>
               <div className="img-serv">
                 <img className="imageS" src={item.image} style={{}} />
-                <h2 className="centered">{checkDesc(item.category)}</h2>
+                <h2 className="centered">{item.category}</h2>
               </div>
             </Link>
           </div>

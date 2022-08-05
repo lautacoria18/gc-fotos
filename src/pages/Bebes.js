@@ -21,19 +21,19 @@ const covers = [
     id: 1,
     image: benicio,
     category: 'Benicio',
-    link: '/embebes/bebes/benicio',
+    link: '/servicios/maternidad/bebes/benicio',
   },
   {
     id: 2,
     image: francisco,
     category: 'Francisco',
-    link: '/embebes/bebes/francisco',
+    link: '/servicios/maternidad/bebes/francisco',
   },
   {
     id: 3,
     image: bauti,
     category: 'Bautista',
-    link: '/embebes/bebes/bauti',
+    link: '/servicios/maternidad/bebes/bauti',
   },
 ];
 
@@ -43,7 +43,7 @@ export default function Embebes() {
 
   return (
     <>
-      <Link to="/embebes" className="goBack">
+      <Link to="/servicios/maternidad" className="goBack">
         <FaArrowLeft />
       </Link>
 

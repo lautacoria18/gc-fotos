@@ -15,33 +15,18 @@ import e from '../assets/images/emb/n3.jpg';
 
 import './Servicios.css';
 
-function checkDesc(tipo) {
-  if (tipo === 'BEBE') {
-    return 'BEBES';
-  }
-  if (tipo === 'EMBARAZADA') {
-    return 'EMBARAZADAS';
-  }
-}
-function checkLink(tipo) {
-  if (tipo === 'BEBE') {
-    return '/embebes/bebes';
-  }
-  if (tipo === 'EMBARAZADA') {
-    return '/embebes/embarazadas';
-  }
-}
-
 const covers = [
   {
     id: 1,
     image: b,
-    category: 'BEBE',
+    category: 'BEBES',
+    link: '/servicios/maternidad/bebes',
   },
   {
     id: 2,
     image: e,
-    category: 'EMBARAZADA',
+    category: 'EMBARAZADAS',
+    link: '/servicios/maternidad/embarazadas',
   },
 ];
 
@@ -60,10 +45,10 @@ export default function Embebes() {
           // eslint-disable-next-line react/jsx-no-comment-textnodes
 
           <div className="cont">
-            <Link to={checkLink(item.category)}>
+            <Link to={item.link}>
               <div className="img-serv">
                 <img className="imageS" src={item.image} style={{}} />
-                <div className="centered">{checkDesc(item.category)}</div>
+                <div className="centered">{item.category}</div>
               </div>
             </Link>
           </div>

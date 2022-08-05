@@ -73,7 +73,7 @@ export default function Tigan() {
   };
   return (
     <>
-      <Link to="/productos" className="goBack">
+      <Link to="/servicios/productos" className="goBack">
         <FaArrowLeft />
       </Link>
       <div className={model ? 'model open' : 'model'}>

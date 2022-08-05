@@ -20,13 +20,13 @@ const covers = [
     id: 1,
     image: b,
     category: 'TIGAN',
-    link: '/productos/tigan',
+    link: '/servicios/productos/tigan',
   },
   {
     id: 2,
     image: e,
     category: 'PERSONALIZADOS',
-    link: '/productos/personalizados',
+    link: '/servicios/productos/personalizados',
   },
 ];
 

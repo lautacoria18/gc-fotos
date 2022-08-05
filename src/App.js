@@ -58,22 +58,44 @@ export default function App() {
           <Route path="/servicios/fotoperiodismo/lgbt" component={LGBT} />
           <Route path="/servicios/fotoperiodismo/hiv" component={HIV} />
           <Route path="/servicios/fotoperiodismo/8m" component={MarchaMujer} />
-          <Route exact path="/productos" component={Producto} />
-          <Route path="/productos/tigan" component={Tigan} />
-          <Route path="/productos/personalizados" component={Personalizados} />
-          <Route exact path="/embebes" component={Embebes} />
-          <Route exact path="/embebes/bebes" component={Bebes} />
-          <Route path="/embebes/bebes/bauti" component={Bauti} />
-          <Route path="/embebes/bebes/benicio" component={Benicio} />
-          <Route path="/embebes/bebes/francisco" component={Francisco} />
-          <Route exact path="/embebes/embarazadas" component={Embarazadas} />
-          <Route path="/embebes/embarazadas/debora" component={Debora} />
-          <Route path="/embebes/embarazadas/florencia" component={Florencia} />
-          <Route path="/embebes/embarazadas/agostina" component={Agostina} />
-          <Route path="/embebes/embarazadas/sol" component={Sol} />
-          <Route path="/eventos" component={Eventos} />
-          <Route path="/civil" component={Civil} />
-          <Route path="/skylab" component={Skylab} />
+          <Route exact path="/servicios/productos" component={Producto} />
+          <Route path="/servicios/productos/tigan" component={Tigan} />
+          <Route
+            path="/servicios/productos/personalizados"
+            component={Personalizados}
+          />
+          <Route exact path="/servicios/maternidad" component={Embebes} />
+          <Route exact path="/servicios/maternidad/bebes" component={Bebes} />
+          <Route path="/servicios/maternidad/bebes/bauti" component={Bauti} />
+          <Route
+            path="/servicios/maternidad/bebes/benicio"
+            component={Benicio}
+          />
+          <Route
+            path="/servicios/maternidad/bebes/francisco"
+            component={Francisco}
+          />
+          <Route
+            exact
+            path="/servicios/maternidad/embarazadas"
+            component={Embarazadas}
+          />
+          <Route
+            path="/servicios/maternidad/embarazadas/debora"
+            component={Debora}
+          />
+          <Route
+            path="/servicios/maternidad/embarazadas/florencia"
+            component={Florencia}
+          />
+          <Route
+            path="/servicios/maternidad/embarazadas/agostina"
+            component={Agostina}
+          />
+          <Route path="/servicios/maternidad/embarazadas/sol" component={Sol} />
+          <Route exact path="/servicios/eventos" component={Eventos} />
+          <Route path="/servicios/eventos/natiagus" component={Civil} />
+          <Route path="/servicios/eventos/skylab" component={Skylab} />
           <Route exact path="/" component={Inicio} />
         </Switch>
       </BrowserRouter>

@@ -38,7 +38,7 @@ export default function Sol() {
   };
   return (
     <>
-      <Link to="/servicios" className="goBack">
+      <Link to="/servicios/maternidad/embarazadas" className="goBack">
         <FaArrowLeft />
       </Link>
       <div className={model ? 'model open' : 'model'}>

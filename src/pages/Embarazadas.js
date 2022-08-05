@@ -22,25 +22,25 @@ const covers = [
     id: 1,
     image: agos,
     category: 'Agostina',
-    link: '/embebes/embarazadas/agostina',
+    link: '/servicios/maternidad/embarazadas/agostina',
   },
   {
     id: 2,
     image: debo,
     category: 'Debora',
-    link: '/embebes/embarazadas/debora',
+    link: '/servicios/maternidad/embarazadas/debora',
   },
   {
     id: 3,
     image: ana,
     category: 'Florencia',
-    link: '/embebes/embarazadas/florencia',
+    link: '/servicios/maternidad/embarazadas/florencia',
   },
   {
     id: 4,
     image: sol,
     category: 'Sol',
-    link: '/embebes/embarazadas/sol',
+    link: '/servicios/maternidad/embarazadas/sol',
   },
 ];
 
@@ -50,7 +50,7 @@ export default function Embarazadas() {
 
   return (
     <>
-      <Link to="/embebes" className="goBack">
+      <Link to="/servicios/maternidad" className="goBack">
         <FaArrowLeft />
       </Link>
 

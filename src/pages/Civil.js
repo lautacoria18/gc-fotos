@@ -78,7 +78,7 @@ export default function Civil() {
   };
   return (
     <>
-      <Link to="/eventos" className="goBack">
+      <Link to="/servicios/eventos" className="goBack">
         <FaArrowLeft />
       </Link>
       <div className={model ? 'model open' : 'model'}>

@@ -13,14 +13,6 @@ import s from '../assets/images/sky/7.jpg';
 
 import './Servicios.css';
 
-function checkDesc(tipo) {
-  if (tipo === 'CASAMIENTO') {
-    return 'CIVIL';
-  }
-  if (tipo === 'SKYLAB') {
-    return 'SKYLAB';
-  }
-}
 function checkLink(tipo) {
   if (tipo === 'CASAMIENTO') {
     return '/civil';
@@ -35,11 +27,13 @@ const covers = [
     id: 1,
     image: c,
     category: 'NATI Y AGUS',
+    link: '/servicios/eventos/natiagus',
   },
   {
     id: 2,
     image: s,
     category: 'SKYLAB',
+    link: '/servicios/eventos/skylab',
   },
 ];
 
@@ -58,12 +52,10 @@ export default function Eventos() {
           // eslint-disable-next-line react/jsx-no-comment-textnodes
 
           <div className="cont">
-            <Link to={checkLink(item.category)}>
+            <Link to={item.link}>
               <div className="img-serv">
                 <img className="imageS" src={item.image} style={{}} />
-                <h2 className="centered">
-                  {item.category /* checkDesc(item.category) */}
-                </h2>
+                <h2 className="centered">{item.category}</h2>
               </div>
             </Link>
           </div>

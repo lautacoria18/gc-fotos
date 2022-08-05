@@ -33,7 +33,7 @@ export default function Bauti() {
   };
   return (
     <>
-      <Link to="/servicios" className="goBack">
+      <Link to="/servicios/maternidad/bebes" className="goBack">
         <FaArrowLeft />
       </Link>
       <div className={model ? 'model open' : 'model'}>
