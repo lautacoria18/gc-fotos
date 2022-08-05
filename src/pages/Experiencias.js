@@ -8,7 +8,7 @@ export default function Experiencias() {
       texto:
         'Quisimos relanzar la línea de botines con una sesión de fotos y el trabajo final superó nuestra expectativa. Seguiremos trabajando con Uds para futuros lanzamientos!',
       cliente: 'Tigan Calzado',
-      link: '/productos/tigan',
+      link: '/servicios/productos/tigan',
     },
     {
       id: 1,
@@ -40,9 +40,7 @@ export default function Experiencias() {
           <p className="text-exp">{item.texto}</p>
           <h3 className="name-exp">{item.cliente}</h3>
           <h3 className="verMas">
-            <a href={item.link} target="blank">
-              Ver fotos
-            </a>
+            <a href={item.link}>Ver fotos</a>
           </h3>
         </div>
       ))}
