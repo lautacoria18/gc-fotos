@@ -64,8 +64,11 @@ export default function ContactSection() {
             <a href="https://www.instagram.com/fotografiagcph/" target="_blank">
               <ContactInfoItem icon={<Instagram />} text="fotografiagcph" />
             </a>
-            <a href="mailto:g.cassarino98@gmail.com" target="_blank">
-              <ContactInfoItem icon={<Mail />} text="g.cassarino98@gmail.com" />
+            <a href="mailto:gc.moonlight.ph@gmail.com" target="_blank">
+              <ContactInfoItem
+                icon={<Mail />}
+                text="gc.moonlight.ph@gmail.com"
+              />
             </a>
             <a
               target="_blank"

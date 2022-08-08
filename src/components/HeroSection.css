@@ -49,12 +49,12 @@
   .container-exp {
     margin-left: auto;
     margin-top: 20px;
-    width: 9.5cm;
+    width: 14cm;
     height: 190px;
   }
   .text-exp {
     margin-left: auto;
-    margin-top: 5px;
+    margin-top: 9px;
     font-size: 1.5em;
     text-align: justify;
   }
@@ -71,13 +71,15 @@
 
 @media (max-width: 991px) {
   /*este es para tablet */
+
   .block-experiencias {
     display: block;
+    text-align: center;
   }
   .container-exp {
     margin-left: 0px;
     margin-top: 20px;
-    width: 18cm;
+    width: auto;
     height: 190px;
   }
   .name-exp {

@@ -9,3 +9,19 @@
 .container-exp-page {
   width: 10cm;
 }
+@media (max-width: 991px) {
+  .experiencias-page {
+    margin-top: 100px;
+    display: block;
+
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .container-exp-page {
+    width: 9cm;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+}
