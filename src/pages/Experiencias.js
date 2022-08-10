@@ -21,8 +21,8 @@ export default function Experiencias() {
       id: 1,
       texto:
         'Guada, fue excelente. Estuviste en cada detalle y super amable. Le dedicaste todo el tiempo a que salga todo perfecto. Estoy agradecida por las hermosas fotos!',
-      cliente: '/servicios/maternidad/embarazadas/agostina',
-      link: '/productos',
+      cliente: 'Agostina',
+      link: '/servicios/maternidad/embarazadas/agostina',
     },
     {
       id: 1,
