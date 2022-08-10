@@ -20,16 +20,15 @@ export default function Experiencias() {
     {
       id: 1,
       texto:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat',
-      cliente: 'Hermanas',
+        'Guada, fue excelente. Estuviste en cada detalle y super amable. Le dedicaste todo el tiempo a que salga todo perfecto. Estoy agradecida por las hermosas fotos!',
+      cliente: '/servicios/maternidad/embarazadas/agostina',
       link: '/productos',
     },
     {
       id: 1,
-      texto:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat',
-      cliente: 'Hermanas',
-      link: '/productos',
+      texto: 'Guada, muy cómoda, detallista y conforme. 😘 Saludos',
+      cliente: 'Sol',
+      link: '/servicios/maternidad/embarazadas/sol',
     },
   ];
 

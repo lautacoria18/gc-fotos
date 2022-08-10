@@ -37,6 +37,7 @@ import Servicios from './pages/Servicios';
 import Skylab from './pages/Skylab';
 import Sobremi from './pages/Sobremi';
 import Florencia from './pages/Embarazadas/Florencia';
+import './App.css';
 
 export default function App() {
   return (
