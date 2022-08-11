@@ -11,6 +11,7 @@ import SectionTitle from './SectionTitle';
 const ContactSectionStyle = styled.div`
   padding: 10rem 0;
   .contactSection__wrapper {
+    font-family: 'Belgrano';
     display: flex;
     gap: 5rem;
     margin-top: 7rem;

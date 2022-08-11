@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 import RobotoMonoRegular from '../assets/fonts/RobotoMono-Regular.ttf';
 import MontserratSemiBold from '../assets/fonts/Montserrat-SemiBold.ttf';
 import MontserratBold from '../assets/fonts/Montserrat-Bold.ttf';
+import BelgranoRegular from '../assets/fonts/Belgrano-Regular.ttf';
 
 const Typography = createGlobalStyle`
   @font-face {
@@ -19,16 +20,22 @@ const Typography = createGlobalStyle`
     src: url(${MontserratBold});
     font-style: normal;
   }
+  @font-face {
+    font-family: 'Belgrano Regular';
+    src: url(${BelgranoRegular});
+    font-style: normal;
+  }
+  
   html{
-    font-family: 'RobotoMono Regular';
+    font-family: 'Belgrano Regular';
     color: var(--gray-1);
   }
   *{
-    font-family: 'RobotoMono Regular';
+    font-family: 'Belgrano Regular';
     color: var(--gray-1);
   }
   h1,h2,h3,h4,h5,h6{
-    font-family: 'Montserrat SemiBold'
+    font-family: 'Belgrano Regular'
   }
 `;
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import Ptext from '../components/Ptext';
 import './Experiencias.css';
 
 export default function Experiencias() {
@@ -36,7 +37,7 @@ export default function Experiencias() {
     <div className="experiencias-page">
       {data.map((item, index) => (
         <div className="container-exp-page">
-          <p className="text-exp">{item.texto}</p>
+          <Ptext className="text-exp">{item.texto}</Ptext>
           <h3 className="name-exp">{item.cliente}</h3>
           <h3 className="verMas">
             <a href={item.link}>Ver fotos</a>

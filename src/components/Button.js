@@ -5,7 +5,7 @@ import styledComponents from 'styled-components';
 const ButtonStyle = styledComponents.div`
 margin-top: 2rem;
 .button {
-
+  font-family: "Belgrano";
     font-size: 2.2rem;
     background-color: ${(props) =>
       props.outline ? 'transparent' : 'var(--gray-1)'};
