@@ -17,13 +17,13 @@ import './Servicios.css';
 
 function checkDesc(tipo) {
   if (tipo === 'VIH') {
-    return 'MARCHA VIH';
+    return ' VIH';
   }
   if (tipo === '8M') {
-    return 'MARCHA 8M';
+    return ' 8M';
   }
   if (tipo === 'LGBT') {
-    return 'MARCHA LGBT';
+    return ' LGBT';
   }
 }
 function checkLink(tipo) {

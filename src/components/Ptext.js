@@ -8,6 +8,7 @@ const PStyle = styled.div`
   line-height: 1.3em;
   color: white;
   font-family: 'Belgrano';
+  text-align: left;
   @media only screen and (max-width: 768px) {
     font-size: 1.4rem;
   }

@@ -37,6 +37,7 @@ padding: 9rem 0;
 }
 
 @media only screen and (max-width: 768px) {
+
   .container {
     flex-direction: column;
     text-align: center;
@@ -89,7 +90,7 @@ export default function Sobremi() {
           <Ptext>Guadalupe Cassarino.</Ptext>
           <Ptext>Fotógrafa Argentina nacida en Buenos Aires.</Ptext>
           <Ptext>
-            Me acerque a la fotografía por hobby, siendo mí principal interés
+            "Me acerqué a la fotografía por hobby, siendo mí principal interés
             los paisajes y la naturaleza viva.
           </Ptext>{' '}
           <Ptext>
@@ -105,7 +106,7 @@ export default function Sobremi() {
           <Ptext>
             En cada sesión, priorizo el bienestar y la comodidad de la persona
             para conseguir resultados casuales que quedarán guardados como un
-            buen recuerdo.
+            buen recuerdo."
           </Ptext>
           <div className="aboutSection__buttons">
             <Button btnLink="/Servicios" btnText="Mis servicios" />

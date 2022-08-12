@@ -1,5 +1,5 @@
 import { HourglassEmpty } from '@material-ui/icons';
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   BrowserRouter,
   BrowserRouter as Router,
@@ -38,14 +38,16 @@ import Skylab from './pages/Skylab';
 import Sobremi from './pages/Sobremi';
 import Florencia from './pages/Embarazadas/Florencia';
 import './App.css';
+import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <NavMenu />
 
-        <Switch>
+        <Switch onUpdate={() => window.scrollTo(0, 0)}>
           <Route path="/sobremi" component={Sobremi} />
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/contacto" component={Contacto} />

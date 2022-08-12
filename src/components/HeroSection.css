@@ -14,13 +14,14 @@
   margin-left: 30px;
   margin-top: 20px;
   width: 15cm;
-  height: 250px;
+  height: 200px;
 }
 
 .text-exp {
   margin-left: 10px;
   margin-top: 5px;
   font-size: 1.5em;
+  color: white;
 }
 
 .name-exp {
@@ -32,6 +33,13 @@
 .verMas {
   text-align: right;
   margin-top: -15px;
+}
+
+.contact-inicio {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 1280px;
 }
 
 @media (max-width: 480px) {
@@ -54,7 +62,7 @@
   .text-exp {
     margin-left: auto;
     margin-top: 9px;
-    font-size: 1.5em;
+    font-size: 1.8em;
     text-align: justify;
   }
   .name-exp {
@@ -65,6 +73,12 @@
   }
   .seeMore {
     margin-top: 300px;
+  }
+  .contact-inicio {
+    margin-top: 1000px;
+    display: block;
+    justify-content: space-around;
+    width: auto;
   }
 }
 
@@ -86,5 +100,11 @@
     margin-left: 10px;
     text-align: left;
     font-size: medium;
+  }
+  .contact-inicio {
+    margin-top: 250px;
+    display: block;
+    justify-content: space-around;
+    width: auto;
   }
 }
