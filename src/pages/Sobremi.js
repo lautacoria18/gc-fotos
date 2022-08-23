@@ -3,7 +3,7 @@ import styledComponents from 'styled-components';
 import Button from '../components/Button';
 import Ptext from '../components/Ptext';
 import SectionTitle from '../components/SectionTitle';
-import AboutImg from '../assets/images/guada.jpg';
+import AboutImg from '../assets/images/guada1.jpg';
 
 const AboutSectionStyle = styledComponents.div`
 padding: 9rem 0;
@@ -37,6 +37,12 @@ padding: 9rem 0;
 }
 
 @media only screen and (max-width: 768px) {
+
+  .guada-foto{
+    margin-left: 50px;
+    width: 380px;
+    height: 800px;
+  }
 
   .container {
     flex-direction: column;
